@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <!-- fontawsome Link -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- bootstrap Link -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Main Style Sheet  -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top  navbar-expand-lg ">
+    <div class="container-fluid">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid ">
+            <div class="d-flex align-items-center gap-3">
+              <i class="fa-brands text-primary fs-1 fa-soundcloud"></i>
+              <a class="navbar-brand fs-3 text-white" href="#">Weather</a>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse text-white   navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav d-flex  gap-5 ms-auto">
+                <a class="nav-link rounded-pill active" aria-current="page" href="#">Home</a>
+                <a class="nav-link rounded-pill" href="#Features">Features</a>
+                <a class="nav-link rounded-pill" href="#">Pricing</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </nav>
+  <main>
+    <header class="my-5">
+
+      <div class="form-box ">
+        <div class="container box">
+          <input type="search" oninput="SearchLocation()" placeholder="Find your Location" class="form-control rounded-pill">
+          <button class="btn btn-primary  rounded-pill"> Find</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-3 cardbox col-lg-4">
+            <article class="p-3">
+              <div class="article-header border-bottom mb-3 p-2 d-flex justify-content-between">
+                <span id="dayToday"></span>
+                <div>
+                  <span id="todayNumber"></span>
+                  <span id="todayMonth"></span>
+                </div>
+              </div>
+              <div class="article-body d-flex flex-column  p-2 ms-lg-5">
+                <span id="citycode"></span>
+                <div class="d-flex align-items-center gap-lg-5">
+                  <h1 id="tempToday"></h1>
+                  <!-- <i class="fa-solid fs-2 fa-moon"></i> -->
+                  <img  id="iconToday"  alt="">
+                </div>
+                <span id="statuToday" class="text-primary"></span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mt-3 cardbox col-lg-4">
+            <article class="p-3">
+              <div class="article-header border-bottom mb-3 p-2 d-flex justify-content-center">
+                <span id="dayTomorrow"></span>   
+              </div>
+              <div class="article-body d-flex flex-column align-items-center  p-2 ">
+                <!-- <i class="fa-solid fs-2 fa-moon"></i> -->
+                <img id="iconTomorrow" alt="">
+                <div class="d-flex flex-column align-items-center mb-3 ">
+                  <h1 id="tempTomorrow"></h1>
+                  <span id="minTempTomorrow"></span>
+                </div>
+                <span id="statusTomorrow" class="text-primary"></span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-5 mt-3 cardbox col-lg-4">
+            <article class="p-3">
+              <div class="article-header border-bottom mb-3 p-2 d-flex justify-content-center">
+                <span id="afterTomorrowDay"></span>   
+              </div>
+              <div class="article-body d-flex flex-column align-items-center  p-2 ">
+                <!-- <i class="fa-solid fs-2 fa-moon"></i> -->
+                <img id="iconAfterTomorrow" alt="">
+                <div class="d-flex flex-column align-items-center mb-3 ">
+                  <h1 id="afterTomorrowMaxTemp"></h1>
+                  <span id="afterTomorrowMinTemp"></span>
+                </div>
+                <span id="afterTomorrowStatus" class="text-primary"></span>
+              </div>
+            </article>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="Features" class="">
+        <div class="container mb-5 ">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="img-card shadow-lg">
+                <img id="firstImage">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="img-card shadow-lg">
+                <img  id="secondImage">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="img-card shadow-lg">
+                <img id="thirdImage">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </main>
+  <footer class="fixed-bottom">
+    <div class="container py-3 text-center">
+        <p class="copyright m-0 fs-6 fw-bold">
+            Made with <i class="fa-solid fa-heart fa-beat mx-2"></i> by
+            <a href="https://www.linkedin.com/in/hadyayman2020/?trk=public-profile-join-page"
+                class="text-decoration-none fw-normal d-inline-block" target="_blank">Hady Ayman</a>
+        </p>
+    </div>
+</footer>
+
+
+
+  <!-- bootstrap js link -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Main js link -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

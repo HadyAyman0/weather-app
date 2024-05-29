@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: #f1f1f1;
+}
+
+
+nav
+{
+    background-color: #1e202b;
+}
+.nav-link
+{
+    color: #f1f1f1;
+    transition: border 350ms;
+    font-weight: 400;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+
+}
+.navbar-brand
+{
+    font-weight: 400;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.navbar-nav .active
+{
+    border: solid 1.5px blueviolet;
+ 
+    
+
+}
+.navbar-nav .nav-link.active
+{
+    color: #f1f1f1;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+
+    padding-inline: 1.25rem;
+}
+.nav-link:hover{
+    border: solid 1.5px blueviolet;
+
+    color: blueviolet;
+}
+header
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),url(../imgs/moon-planet-8k-1920x1200-87.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-box
+{
+padding: 70px 0 ;
+
+
+}
+.form-box input
+{
+    min-height: 60px;
+    width: 100%;
+    background-color:#1e202b ;
+    padding: 20px 50px 20px 20px;
+    color: white;
+    border-color: #1e202b;
+   
+}
+.form-box input::placeholder
+{
+    color: #f1f1f1;
+}
+.form-control:focus
+{
+    background-color:#1e202b ;
+    box-shadow: none;
+    color: #f1f1f1;
+    border-color: #1e202b;
+}
+.form-box button
+{
+  padding-inline: 30px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+.box
+{
+    position: relative;
+}
+.article-body h1 
+{
+    font-size: 4.4285714286rem;
+    
+
+}
+.article-body span
+{   
+     font-size: 1.2857142857em;
+    font-weight: 400;
+    font-family: "Jaro", sans-serif;
+
+    font-weight: 200;
+    font-style: normal;
+
+}
+.article-header span
+{
+    font-weight: 400;
+    font-family: "Jaro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+article
+{
+    border: solid 1px white;
+    border-radius: 20px;
+    height: 20rem;
+}
+.fixed-bottom 
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #1e202b;
+} 
+.fixed-bottom a 
+{
+    font-weight: 400;
+    font-family: "Jaro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+.img-card
+{
+    border: solid 1px white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+
+.img-card img
+{
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 30px;
+    min-height: 200px;
+    object-fit: cover;
+   
+}
